@@ -59,6 +59,13 @@ docker-compose down
 ```
 
 
+## Generate Kubernetes config files
+
+```bash
+kompose convert
+```
+
+
 ## Reference:
 
 * [Git Submodules Tutorial | For Beginners](https://www.youtube.com/watch?v=gSlXo2iLBro)
