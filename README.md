@@ -65,6 +65,15 @@ docker-compose down
 kompose convert
 ```
 
+```bash
+minikube start
+kubectl get nodes
+minikube status
+kubectl apply -f backend-deployment.yaml,backend-service.yaml,fronend-deployment.yaml,fronend-service.yaml
+kubectl delete -f backend-deployment.yaml,backend-service.yaml,fronend-deployment.yaml,fronend-service.yaml
+minikube stop
+```
+
 
 ## Reference:
 
