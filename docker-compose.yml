@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  backend:
+    build: ./backend-submodule
+    container_name: fastapi-app
+    environment:
+      - WORKERS_PER_CORE=0.25
+      - MAX_WORKERS=4
+      - WEB_CONCURRENCY=1
+      - WORKER_CLASS=uvicorn.workers.UvicornWorker
+      - TIMEOUT=120
+      - KEEP_ALIVE=120
+      - GRACEFUL_TIMEOUT=120
+    ports:
+      - "5000:80"
+    depends_on:
+      - fronend
+  fronend:
+    build: ./frontend-submodule
+    container_name: streamlit-app
+    ports:
+      - "80:8501"
