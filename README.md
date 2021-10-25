@@ -7,7 +7,7 @@
 
 ## Adding sub-modules
 
-```
+```bash
 git submodule add https://github.com/pandalearnstocode/frontend-submodule
 git submodule add https://github.com/pandalearnstocode/backend-submodule
 git add .
@@ -19,9 +19,18 @@ git config submodule.recurse true
 
 ## Cloning this repo
 
-```
+```bash
 git clone https://github.com/pandalearnstocode/application-module.git
 git submodule update --init
+```
+
+
+## Docker-compose
+
+```bash
+docker-compose build
+docker-compose up
+docker-compose down
 ```
 
 
