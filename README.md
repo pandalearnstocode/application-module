@@ -4,6 +4,7 @@
 
 * frontend [streamlit app] : https://github.com/pandalearnstocode/frontend-submodule
 * backend [fastapi app] : https://github.com/pandalearnstocode/backend-submodule
+* application [docker compose]: https://github.com/pandalearnstocode/application-module
 
 ## Project directory structure
 
