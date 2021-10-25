@@ -19,5 +19,7 @@ services:
   fronend:
     build: ./frontend-submodule
     container_name: streamlit-app
+    environment:
+       - deployment=docker
     ports:
       - "80:8501"
