@@ -1,0 +1,6 @@
+[submodule "frontend-submodule"]
+	path = frontend-submodule
+	url = https://github.com/pandalearnstocode/frontend-submodule
+[submodule "backend-submodule"]
+	path = backend-submodule
+	url = https://github.com/pandalearnstocode/backend-submodule
